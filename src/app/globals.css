@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Brand colors copied from Reports/resources/css/app.css (#5651AB) */
+@theme {
+  --color-brand-50: rgb(246 246 249);
+  --color-brand-100: rgb(233 233 241);
+  --color-brand-200: rgb(207 206 228);
+  --color-brand-300: rgb(170 167 210);
+  --color-brand-400: rgb(127 123 193);
+  --color-brand-500: rgb(86 81 171);
+  --color-brand-600: rgb(69 64 142);
+  --color-brand-700: rgb(57 53 117);
+  --color-brand-800: rgb(46 43 91);
+  --color-brand-900: rgb(35 33 66);
+
+  --font-sans: "Segoe UI", Tahoma, "Noto Sans Arabic", Arial, sans-serif;
+  --font-report: "Amiri", "Times New Roman", serif;
+}
+
+/* Used later by the printable teacher reports */
+@font-face {
+  font-family: "Amiri";
+  src: url("/fonts/Amiri-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amiri";
+  src: url("/fonts/Amiri-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  background: var(--color-brand-100);
+  color: #1f2937;
+  font-family: var(--font-sans);
+}
